@@ -28,3 +28,14 @@
  (21)  commit -m "Paso 21"
  (22)  checkout Lola
  (23)  stash apply
+ (25)  add bitacora.txt
+ (26)  commit -m "Paso 26"
+ (27)  checkout master
+ (28)  merge Lola                   Al realizar la fusión, se produce un error porque existen conflictos
+                                    en el archivo bitacora.txt.
+                                    Como se han introducido commits en ambas ramas desde que estas se
+                                    separaron (branch), la fusión no puede ser por fast-forward. En su
+                                    lugar, ha sido fusión recursiva con conflictos.
+
+Nota: aunque no se ha indicado, en todas las fusiones con conflicto se ha editado el fichero que da 
+      problemas y se ha hecho un add + commit para completar la fusión.
