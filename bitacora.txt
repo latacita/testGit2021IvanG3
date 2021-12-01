@@ -12,4 +12,11 @@
  (04)  checkout Paco
  (13)  stash + checkout master
  (14)                               La fusión de la rama Lola dentro de master sería por fast-forward.
+ (16)  add bitacora.txt
+ (17)  commit -m "Paso 17"
+ (18)  merge Paco                   Al realizar la fusión, se produce un error porque existen conflictos
+                                    en el archivo bitacora.txt.
+ (19)  atom bitacora.txt            Como se han introducido commits en ambas ramas desde que estas se
+                                    separaron (branch), la fusión no puede ser por fast-forward. En su
+                                    lugar, finalmente ha sido fusión recursiva con conflictos.
 
